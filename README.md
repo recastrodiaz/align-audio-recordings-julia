@@ -18,3 +18,15 @@ julia
 # 2. Start Pluto and open the notebook in http://localhost:1234
 import Pluto; Pluto.run(1234);
 ```
+
+### Command line usage
+
+#### Requirements
+
+- [ffmpeg](https://ffmpeg.org/)
+
+```SH
+# The input files can be any video or audio file supported by ffmpeg
+# Prints the offset in seconds
+julia align-recordings.jl --within data/jazz-waves.ogg --find-offset-of data/jazz.ogg
+```
